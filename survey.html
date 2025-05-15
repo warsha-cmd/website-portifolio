@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Professional portfolio of a web developer">
+  <meta name="keywords" content="portfolio, web development, HTML, CSS, JavaScript">
+  <meta name="author" content="Your Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey - My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">My Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="survey-container">
+    <h2>User Survey</h2>
+    <form id="surveyForm">
+      <label for="age">Your Age Group:</label><br>
+      <input type="radio" name="age" value="under18" required> Under 18<br>
+      <input type="radio" name="age" value="18-30"> 18-30<br>
+      <input type="radio" name="age" value="31-50"> 31-50<br>
+      <input type="radio" name="age" value="50+"> 50+<br><br>
+
+      <label>Which features do you like?</label><br>
+      <input type="checkbox" name="features" value="design"> Design<br>
+      <input type="checkbox" name="features" value="layout"> Layout<br>
+      <input type="checkbox" name="features" value="interactivity"> Interactivity<br>
+      <input type="checkbox" name="features" value="performance"> Performance<br><br>
+
+      <label for="feedback">Your Feedback:</label><br>
+      <textarea id="feedback" name="feedback" required></textarea><br><br>
+
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <button type="submit">Submit Survey</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Declares character encoding (fixes UTF-8 warning) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title> <!-- Fixes "head missing title" error -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="simple-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main class="projects-grid">
+        <h1>My Creative Works</h1>
+        
+        <div class="project-card" onclick="this.classList.toggle('flipped')">
+            <div class="project-front">
+                <h3>Project One</h3>
+                <div class="project-image" style="background-color:lightblue"></div>
+            </div>
+            <div class="project-back">
+                <p>A unique website design</p>
+                <button>View Details</button>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="this.classList.toggle('flipped')">
+            <div class="project-front">
+                <h3>Project Two</h3>
+                <div class="project-image" style="background-color:green;"></div>
+            </div>
+            <div class="project-back">
+                <p>An ordering food system</p>
+                <button>View Details</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>Made with ♥ by Warsha</strong></p> <!-- Fixes strong inside p issue -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

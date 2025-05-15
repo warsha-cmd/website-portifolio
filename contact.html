@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="simple-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <main class="contact-form">
+        <h1>Let's get feedback</h1>
+        
+        <form id="fun-form">
+            <div class="input-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="input-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="input-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" rows="4" required></textarea>
+                <div class="underline"></div>
+            </div>
+            
+            <button type="submit" class="fun-btn">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Made with ♥ by warsha</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
